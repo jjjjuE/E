@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        button{
+            border: none;
+            padding: 10px 15px;
+            background-color: cadetblue;
+            color: aliceblue;
+            
+        }
+    </style>
+</head>
+<body>
+    <button onclick="test()">Click Me</button>
+    <p id="text"></p>
+    
+    <script>
+        function test(){
+            var x;
+            var r = confirm("Are you sure you want to continue?");
+
+            if(r == true){
+                x = "You just click Yes";
+            }
+            else{
+                x = "You just click Cancel";
+            }
+            document.getElementById("text").innerHTML = x;
+        }
+    </script>
+    
+</body>
+</html>
